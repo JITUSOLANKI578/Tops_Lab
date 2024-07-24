@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+         body{
+            background-color: aqua;
+        }
+       div{
+        text-align: center;
+        margin: 100px 550px;
+       }
+       .btn{
+            color: blue;    
+            background-color: aqua;
+       }
+       .btn:hover{
+        color: brown;
+        background-color: black;
+       }
+    </style>
+    <script src="J:\Tops lab\L1\demo.js">
+
+        function data(){
+         let a=  document.Registration.fstname.value;
+         let b=  document.Registration.lstname.value;
+         let c=  document.Registration.eid.value;
+         let d=  document.Registration.pswd.value;
+         let e=  document.Registration.rpswd.value;
+         let f=  document.Registration.gender.value;
+         let g=  document.Registration.dob.value;
+
+        // alert(a);
+         alert(b);
+         console.log(a);
+         document.write(a,b,c,,d)
+         }
+    </script>
+</head>
+<body>
+    <div>
+        <!-- nxsjkacbsiud -->
+        <!-- Login Form  --> 
+    <form name="Registration" action="../L1/Lab4.html" onsubmit="data()">
+      <fieldset >
+         <legend>Registration</legend>
+         <input type="text" placeholder="Enter first name" name="fstname">
+         <input type="text" placeholder="Enter last name" name="lstname"><br><br>  
+         <input type="email" placeholder="email id" name="eid" required><br><br>
+         <input type="password" placeholder="password" name="pswd" ><br><br>
+         <input type="password" placeholder="re-enter password" name="rpswd"><br><br>
+         Gender :- <input type="radio" name="gender" >Male<input type="radio"  name="gender">Female<br><br>
+         DOB :- <input type="date" name="dob" ><br><br>
+         <a href="..\Lab3.html">  <input type="submit" value="Submit" class="btn"></a> 
+        </fieldset>
+     </form>
+    </div>
+    </body>
+</html>
